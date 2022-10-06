@@ -211,7 +211,7 @@ var gameLoop = function() {
             result.areaNewLine += result.areaArray[i]
             result.areaNewLine += "\n"
         }
-        gameText.innerText = dead ? "You are Lost! Click to restart." : result.areaNewLine
+        gameText.value = dead ? "You are Lost! Click to restart." : result.areaNewLine
     }
     scoreDisplay.innerHTML = resources.score
     if (record == 2) {
